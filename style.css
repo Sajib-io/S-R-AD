@@ -8,7 +8,7 @@
     --accent-hover: #1d4ed8;
     --light-gray: #f9fafb;
     --border-color: #e5e7eb;
-    --font-main: 'Google Sans Flex', 'Google Sans', 'Product Sans', sans-serif;
+    --font-main: 'Hind Siliguri', 'Roboto', 'Google Sans Flex', 'Google Sans', 'Product Sans', sans-serif;
     --container-width: 1200px;
 }
 
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    font-family: var(--font-main);
+    font-family: var(--font-main) !important;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -1156,6 +1156,22 @@ select {
 
     .mobile-contact-info p {
         margin-bottom: 8px;
+    }
+}
+
+/* Specific Fix for Very Small Viewports (below 385px) */
+@media (max-width: 385px) {
+    .footer-contact-list li {
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 10%;
+        /* Center the content visually but keep it left aligned */
+        align-items: flex-start;
+    }
+
+    .footer-contact-list .icon {
+        margin-top: 4px;
+        /* Align icon with first line of wrapped text */
     }
 }
 
