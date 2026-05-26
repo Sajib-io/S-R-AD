@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SR ADD</title>
+    <link rel="icon" type="image/png" href="logo-dark.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            background-color: var(--light-gray);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+        }
+
+        .about-section {
+            padding: 80px 0;
+        }
+
+        .about-section:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--heading-color);
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .board-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .board-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            padding: 30px 20px;
+            transition: transform 0.3s;
+        }
+
+        .board-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .board-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            background-color: #eee;
+        }
+
+        .board-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--heading-color);
+        }
+
+        .board-role {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .chairman-message-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        @media(max-width: 768px) {
+            .chairman-message-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container top-bar-inner">
+                <div class="top-socials">
+                    <span data-i18n="follow_us">Follow us on</span>
+                    <a href="https://www.facebook.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"><img src="Socials/facebook.png" alt="Facebook"></a>
+                    <a href="#" aria-label="Twitter"><img src="Socials/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><img src="Socials/instagram (1).png" alt="Instagram"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="Socials/linkedin.png" alt="LinkedIn"></a>
+                </div>
+                <!-- Slogan moved to brand-header -->
+                <div class="top-contacts">
+                    <div class="info-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="value">+8801917864222</span>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <span class="value">sradofficial.bd@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Brand Header -->
+        <div class="brand-header">
+            <div class="container brand-header-inner">
+                <a href="index.html" class="logo"><img src="logo.png" alt="SR ADD"></a>
+                <div class="slogan-box">
+                    <div class="slogan-quote">
+                        <span class="slogan-text">"Your Trust, Our Responsibility"</span>
+                        <span class="slogan-name">- মোঃ সিরাজুল ইসলাম</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container main-header-inner">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li class="dropdown">
+                            <a href="about.html" class="dropbtn">About <span
+                                    class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                            <div class="dropdown-content">
+                                <a href="#mission" data-i18n="nav_mission">Mission</a>
+                                <a href="#vision" data-i18n="nav_vision">Vision</a>
+                                <a href="#board" data-i18n="nav_board">Board Of Directors</a>
+                                <a href="#message" data-i18n="nav_message">Message from the Chairman</a>
+                            </div>
+                        </li>
+                        <li><a href="index.html#services" data-i18n="nav_services">Services</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                    <!-- Mobile Menu Content -->
+                    <div class="mobile-contacts">
+                        <div class="mobile-socials">
+                            <a href="https://www.facebook.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook"><img src="Socials/facebook.png" alt="Facebook"></a>
+                            <a href="#" aria-label="Twitter"><img src="Socials/twitter.png" alt="Twitter"></a>
+                            <a href="https://www.instagram.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram"><img src="Socials/instagram (1).png" alt="Instagram"></a>
+                            <a href="#" aria-label="LinkedIn"><img src="Socials/linkedin.png" alt="LinkedIn"></a>
+                        </div>
+                        <div class="mobile-contact-info">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                +8801917864222
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                rajuahamed711@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+                <button class="mobile-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-i18n="about_us_page_title">About SR AD</h1>
+        </div>
+    </header>
+
+    <!-- Mission Section -->
+    <section id="mission" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="nav_mission">Mission</h2>
+            </div>
+            <p data-i18n="mission_desc">Our mission is to empower brands with innovative, result-driven
+                advertising
+                solutions. We strive to simplify complex marketing challenges and deliver clear, impactful
+                messages that
+                resonate with audiences and drive growth.</p>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="nav_vision">Vision</h2>
+            </div>
+            <p data-i18n="vision_desc">To be the most trusted and creative advertising partner in Bangladesh,
+                known for
+                setting new standards in brand excellence and strategic communication.</p>
+        </div>
+    </section>
+
+    <!-- Board Of Directors -->
+    <section id="board" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="nav_board">Board Of Directors</h2>
+            </div>
+            <div class="board-grid">
+                <!-- Director 1 -->
+                <div class="board-card">
+                    <img src="Board of Directors/Chairman.jpg" alt="মোঃ সিরাজুল ইসলাম" class="board-img">
+                    <h3 class="board-name">মোঃ সিরাজুল ইসলাম</h3>
+                    <p class="board-role">Proprietor</p>
+                    <p class="board-role" style="font-size: 0.9rem; margin-top: 5px;">01719-494568 / 01712-777594</p>
+                </div>
+                <!-- Director 2 -->
+                <div class="board-card">
+                    <img src="Board of Directors/CEO.jpg" alt="Md Raju Ahmed" class="board-img">
+                    <h3 class="board-name">Md Raju Ahmed</h3>
+                    <p class="board-role">Managing Director</p>
+                    <p class="board-role" style="font-size: 0.9rem; margin-top: 5px;">01856-340519 / 01917-864222</p>
+                </div>
+                <!-- Director 3 -->
+                <div class="board-card">
+                    <img src="Board of Directors/Manager.jpg" alt="মো. ফকর উদ্দিন (আনোয়ার)" class="board-img">
+                    <h3 class="board-name">মো. ফকর উদ্দিন (আনোয়ার)</h3>
+                    <p class="board-role">Manager</p>
+                    <p class="board-role" style="font-size: 0.9rem; margin-top: 5px;">01697-857526 / 01611-620782</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message from Chairman -->
+    <section id="message" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="nav_message">Message from the Proprietor</h2>
+            </div>
+            <div class="chairman-message-wrapper">
+                <div class="chairman-image">
+                    <img src="Board of Directors/Chairman.jpg" alt="Chairman" style="width: 100%; border-radius: 8px;">
+                </div>
+                <div class="chairman-content">
+                    <p data-i18n="chairman_message_1">"At SR AD, we embark on every project with a commitment
+                        to
+                        excellence. Our journey has been defined by the trust our clients place in us and the
+                        passion
+                        our team brings to the table."</p>
+                    <br>
+                    <p data-i18n="chairman_message_2">"As we look to the future, we remain dedicated to
+                        innovation and
+                        integrity, ensuring that every brand we touch reaches its full potential."</p>
+                    <br>
+                    <h4 style="font-weight: 700; color: var(--heading-color);" data-i18n="chairman_name">মোঃ সিরাজুল
+                        ইসলাম
+                    </h4>
+                    <p style="color: var(--text-color); font-size: 0.9rem;" data-i18n="chairman_title">Proprietor,
+                        SR AD
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <!-- Left Column: Brand & Social -->
+            <div class="footer-section brand-section">
+                <a href="#" class="footer-logo"><img src="logo-dark.png" alt="SR ADD"></a>
+                <h3 class="footer-brand-name">SR AD</h3>
+                <p class="footer-tagline" data-i18n="footer_tagline">The Largest Creative Agency in Bangladesh
+                </p>
+                <div class="footer-socials-wrapper">
+                    <p class="social-title" data-i18n="footer_social_title">Connect with Social Media</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook"><img src="Socials/facebook.png" alt="Facebook"></a>
+                        <a href="#" aria-label="Twitter"><img src="Socials/twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram"><img src="Socials/instagram (1).png" alt="Instagram"></a>
+                        <a href="#" aria-label="LinkedIn"><img src="Socials/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Info -->
+            <div class="footer-section contact-section">
+                <h3 class="footer-heading" data-i18n="contact_us_title">Contact Us</h3>
+                <ul class="footer-contact-list">
+                    <li>
+                        <span class="material-symbols-outlined icon">call</span>
+                        <a href="tel:+8809613116609">+8801917864222</a> <span data-i18n="footer_overseas">(Local)</span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined icon">mail</span>
+                        <a href="mailto:info@sradd.com">sradofficial.bd@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined icon">location_on</span>
+                        <span data-i18n="footer_address">22/5, Middle Kunipara, Tejgaon I/A, Dhaka-1208</span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined icon">schedule</span>
+                        <span data-i18n="footer_hours">Sat to Thu - 10:00am to 10:00pm (Friday Closed)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p data-i18n="footer_copyright">&copy; 2025 SR ADD. All rights reserved.</p>
+                <p><span data-i18n="developed_by">Developed by</span> <a href="https://www.facebook.com/sajibahmed0011/"
+                        target="_blank" style="color: inherit; text-decoration: underline;"><strong>SAJIB
+                            AHMED</strong></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
