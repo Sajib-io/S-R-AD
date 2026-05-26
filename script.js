@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Show loading state (optional: disable button)
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.innerText;
-            submitBtn.innerText = 'Sending...';
+            submitBtn.innerText = 'পাঠানো হচ্ছে...';
             submitBtn.disabled = true;
 
             // These IDs from the user:
@@ -120,10 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
-                    alert('Message Sent Successfully!');
+                    alert('বার্তাটি সফলভাবে পাঠানো হয়েছে!');
                     contactForm.reset();
                 }, (err) => {
-                    alert('Failed to send message. Please try again later.');
+                    alert('বার্তাটি পাঠানো সম্ভব হয়নি। অনুগ্রহ করে পরে আবার চেষ্টা করুন।');
                     console.log(JSON.stringify(err));
                 })
                 .finally(() => {
