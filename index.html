@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR AD — One Stop Advertising Solutions</title>
+    <meta name="description"
+        content="SR AD - Modern Ad Agecy offering Digital Advertising, Branding, and Creative Design.">
+    <link rel="icon" type="image/png" href="logo-dark.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("fQSZmn1XIpu_kaDDB");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container top-bar-inner">
+                <div class="top-socials">
+                    <span data-i18n="follow_us">Follow us on</span>
+                    <a href="https://www.facebook.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"><img src="Socials/facebook.png" alt="Facebook"></a>
+                    <a href="#" aria-label="Twitter"><img src="Socials/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><img src="Socials/instagram (1).png" alt="Instagram"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="Socials/linkedin.png" alt="LinkedIn"></a>
+                </div>
+                <!-- Slogan moved to brand-header -->
+                <div class="top-contacts">
+                    <div class="info-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="value">+8801917864222</span>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <span class="value">sradofficial.bd@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Header -->
+        <div class="brand-header">
+            <div class="container brand-header-inner">
+                <a href="#" class="logo"><img src="logo.png" alt="SR ADD"></a>
+                <div class="slogan-box">
+                    <div class="slogan-quote">
+                        <span class="slogan-text">"Your Trust, Our Responsibility"</span>
+                        <span class="slogan-name">- মোঃ সিরাজুল ইসলাম</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container main-header-inner">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+                        <li class="dropdown">
+                            <a href="about.html" class="dropbtn">About <span
+                                    class="material-symbols-outlined">keyboard_arrow_down</span></a>
+                            <div class="dropdown-content">
+                                <a href="about.html#mission" data-i18n="nav_mission">Mission</a>
+                                <a href="about.html#vision" data-i18n="nav_vision">Vision</a>
+                                <a href="about.html#board" data-i18n="nav_board">Board Of Directors</a>
+                                <a href="about.html#message" data-i18n="nav_message">Message from the Chairman</a>
+                            </div>
+                        </li>
+                        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                    <!-- Mobile Menu Content -->
+                    <div class="mobile-contacts">
+                        <div class="mobile-socials">
+                            <a href="https://www.facebook.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook"><img src="Socials/facebook.png" alt="Facebook"></a>
+                            <a href="#" aria-label="Twitter"><img src="Socials/twitter.png" alt="Twitter"></a>
+                            <a href="https://www.instagram.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram"><img src="Socials/instagram (1).png" alt="Instagram"></a>
+                            <a href="#" aria-label="LinkedIn"><img src="Socials/linkedin.png" alt="LinkedIn"></a>
+                        </div>
+                        <div class="mobile-contact-info">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                +8801917864222
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                rajuahamed711@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+                <button class="mobile-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="Assets/hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <button class="hero-play-btn" aria-label="Pause Video">
+            <span class="material-symbols-outlined">pause</span>
+        </button>
+        <div class="container hero-content">
+            <h1 class="hero-title" data-i18n="hero_title">SR AD — One Stop Advertising Solution in Bangladesh</h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Elevating brands with minimal, impactful, and
+                strategic
+                advertising.</p>
+            <a href="#contact" class="btn btn-primary" data-i18n="btn_contact">Contact Us</a>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="about_title">Who We Are</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <p data-i18n="about_desc_1">We are a forward-thinking advertising agency focused on simplicity
+                    and
+                    results. At SR ADD, we believe
+                    that less is more. Our mission is to strip away the noise and deliver clear, compelling
+                    messages
+                    that resonate with your audience.</p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <!-- Card 1: Years of Service -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div class="stat-label">Since</div>
+                    <div class="stat-value"><span class="counter" data-target="2015">2010</span></div>
+                </div>
+
+                <!-- Card 2: Team Size -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-label">Team Members</div>
+                    <div class="stat-value"><span class="counter" data-target="20">0</span>+</div>
+                </div>
+
+                <!-- Card 3: Delivery Coverage -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                            <line x1="8" y1="2" x2="8" y2="18"></line>
+                            <line x1="16" y1="6" x2="16" y2="22"></line>
+                        </svg>
+                    </div>
+                    <div class="stat-label">Delivery Coverage</div>
+                    <div class="stat-value">Entire Bangladesh</div>
+                </div>
+
+                <!-- Card 4: Completed Projects -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-label">Completed Projects</div>
+                    <div class="stat-value"><span class="counter" data-target="1000">0</span>+</div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Revolution Section -->
+    <section class="revolution-section">
+        <div class="container">
+            <div class="revolution-grid">
+                <div class="revolution-image">
+                    <img src="Board of Directors/Chairman.jpg" alt="Proprietor">
+                    <div class="proprietor-tag">
+                        <strong>MD. SIRAJUL ISLAM</strong>
+                        <span>PROPRIETOR</span>
+                    </div>
+                </div>
+                <div class="revolution-content">
+                    <h2>Bringing Revolution in the Advertisement Market in Bangladesh</h2>
+                    <p>The legacy of SR AD is over a decade old and over the years we have established itself as the
+                        full of confidence and much revered industrial family of Bangladesh. It consists of 20+ members
+                        with over a thousand project delivered.</p>
+                    <a href="about.html#message" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="simple-carousel">
+                <button class="carousel-arrow prev" aria-label="Previous">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+
+                <div class="carousel-container">
+                    <div class="carousel-slides">
+                        <div class="carousel-slide active">
+                            <img src="Services/Acrylic Signboard.jpg" alt="Acrylic Signboard">
+                            <div class="slide-caption">
+                                <h3>Acrylic Signboard</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Services/Banner.png" alt="Banner">
+                            <div class="slide-caption">
+                                <h3>Banner</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Services/Billboard.png" alt="Billboard">
+                            <div class="slide-caption">
+                                <h3>Billboard</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Services/Festoon.jpg" alt="Festoon">
+                            <div class="slide-caption">
+                                <h3>Festoon</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Services/LED Display.png" alt="LED Display">
+                            <div class="slide-caption">
+                                <h3>LED Display</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Services/Letter Signboard.png" alt="Letter Signboard">
+                            <div class="slide-caption">
+                                <h3>Letter Signboard</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Services/Lightbox.png" alt="Lightbox">
+                            <div class="slide-caption">
+                                <h3>Lightbox</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Services/Neon Sign.webp" alt="Neon Sign">
+                            <div class="slide-caption">
+                                <h3>Neon Sign</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="Services/PCV Board.jpg" alt="PVC Board">
+                            <div class="slide-caption">
+                                <h3>PVC Board</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-arrow next" aria-label="Next">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Marquee Section -->
+    <section class="section brand-marquee">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="brands_title">Brands We've Worked With</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="marquee-content-wrapper">
+                <div class="marquee-content">
+                    <!-- First Set -->
+                    <img src="Brands/Akij.png" alt="Akij Group" class="brand-item">
+                    <img src="Brands/Bashundhara.png" alt="Bashundhara Group" class="brand-item brand-item-large">
+                    <img src="Brands/Grameenphone.png" alt="Grameenphone" class="brand-item brand-item-large">
+                    <img src="Brands/Robi.png" alt="Robi" class="brand-item">
+                    <img src="Brands/Swapno.jpg" alt="Swapno" class="brand-item">
+                    <img src="Brands/Airtel.png" alt="Airtel" class="brand-item">
+                    <img src="Brands/Banglalink.png" alt="Banglalink" class="brand-item">
+                    <img src="Brands/Pran.jpeg" alt="Pran" class="brand-item">
+                    <img src="Brands/Akij Food.png" alt="Akij Food" class="brand-item">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="contact_title">Get in Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form_name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form_message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="btn_send">Send Message</button>
+                </form>
+
+                <div class="map-section">
+                    <div class="map-container">
+                        <iframe src="https://maps.google.com/maps?q=23.7656389,90.4093611&hl=en&z=15&t=m&output=embed"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <a href="https://maps.app.goo.gl/jxojNb8imvRQUC9v7" target="_blank" class="btn btn-primary"
+                        style="align-self: flex-start; text-decoration: none;">Find us on Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <!-- Left Column: Brand & Social -->
+            <div class="footer-section brand-section">
+                <a href="#" class="footer-logo"><img src="logo-dark.png" alt="SR ADD"></a>
+                <h3 class="footer-brand-name">SR AD</h3>
+                <p class="footer-tagline" data-i18n="footer_tagline">One Stop Advertisement Agency in Dhaka, Bangladesh
+                </p>
+                <div class="footer-socials-wrapper">
+                    <p class="social-title" data-i18n="footer_social_title">Connect with Social Media</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook"><img src="Socials/facebook.png" alt="Facebook"></a>
+                        <a href="#" aria-label="Twitter"><img src="Socials/twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/rrajuahmed222/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram"><img src="Socials/instagram (1).png" alt="Instagram"></a>
+                        <a href="#" aria-label="LinkedIn"><img src="Socials/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Info -->
+            <div class="footer-section contact-section">
+                <h3 class="footer-heading" data-i18n="contact_us_title">Contact Us</h3>
+                <ul class="footer-contact-list">
+                    <li>
+                        <span class="material-symbols-outlined icon">call</span>
+                        <a href="tel:+8801917864222">+8801917864222</a> <span data-i18n="footer_overseas">(Local)</span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined icon">mail</span>
+                        <a href="mailto:info@sradd.com">sradofficial.bd@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined icon">location_on</span>
+                        <span data-i18n="footer_address">22/5, Middle Kunipara, Tejgaon I/A, Dhaka-1208</span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined icon">schedule</span>
+                        <span data-i18n="footer_hours">Sat to Thu - 10:00am to 10:00pm (Friday Closed)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p data-i18n="footer_copyright">&copy; 2025 SR ADD. All rights reserved.</p>
+                <p><span data-i18n="developed_by">Developed by</span> <a href="https://www.facebook.com/sajibahmed0011/"
+                        target="_blank" style="color: inherit; text-decoration: underline;"><strong>SAJIB
+                            AHMED</strong></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
